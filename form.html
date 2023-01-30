@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>F&J Shop</title> <!--Título e respetivo nome da página-->
+        
+        <link rel="stylesheet" href="css/style.css">           <!--Ligação ao código do css-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        <link rel="stylesheet" href="font_css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--Ligação ao fornecedor dos icons-->
+
+<!---icon---------------->
+<link rel="shortcut icon" href="imagens/FJ.png"/>
+</head>
+<body>
+
+   <!---TopNav-->
+    <div class="topnav">
+            <!---Site Logo-->
+            <div class="lg">
+                <a href="index.html" class="logo"><img src="imagens/FJ.png"></a>
+            </div>
+            <div>
+                <!-----Mobile Icon-->
+                <a class="icon">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <!--Menu-->
+                <div class="hr">
+                    <a href="index.html">Home</a>
+                    <a href="homem.html">Men</a>            
+                    <a href="mulher.html">Women</a>
+                    <a href="crianca.html">Kids</a>
+                </div>
+            </div>
+           
+       
+    </div>
+            <b style="padding-bottom: 10px; display: flex;justify-content: center;font-size: 30px;">Formulário</b> <!--Texto de 30px em bold com espaço entre o conteudo de baixo e este,numa flexbox centrada-->
+            <p style="padding-left: 20px; padding-right: 20px; font-size: 20px;">Para fazer a sua ecomenda preencha o formulario que se segue</p> <!--paragrafo com texto de 20px com espaço à margem esquerda e direita-->
+            <br>
+            <form action="THX.html" enctype="text/plain"> <!--Form que redireciona para "THX.html"-->
+            <fieldset style="font-size: 18px;"> <!--Fieldset com texto a 18px-->
+                <legend>Dados pessoais:</legend>   <!--Legenda do fieldset--> 
+                <label for="nome_id">Nome: </label> <!--Label-->
+                <input type="text" name="nome" id="nome_id" placeholder="Qual o seu nome?" maxlength="10" required> <!--input de texto para o nome com comprimento máximo de 10 carateres obrigatório-->
+                <br>
+                <br>
+                <label for="apelido_id">Apelido: </label> <!--Label-->
+                <input type="text" name="apelido" id="apelido_id" placeholder="Qual o seu apelido?" maxlength="20" required> <!--input de texto para o nome com comprimento máximo de 20 carateres obrigatório-->
+                <br>
+                <br>
+                <label for="email_id">E-mail: </label> <!--Label-->
+                <input type="email" name="email" id="email_id" placeholder="Qual o seu email?" pattern="^[A-Za-z0-9._%+-]+@gmail.com$" > <!--input de email para colocar um email-->
+                <br>
+                <br>
+                <label for="tel_id">Contato: </label> <!--Label-->
+                <input type="tel" name="tel" id="tel_id" placeholder="Qual o seu contato?" pattern="[0-9]{9}" maxlength="9" minlength="9" required > <!--input de telemovel para números com mínimo e máximo de 9 carateres obrigatório-->
+                <br>   
+                <br>
+            </fieldset>
+            
+            <fieldset style="font-size: 18px;"> <!--Fieldset com texto a 18px-->
+                <legend>Pagamento:</legend> <!--Legenda do fieldset--> 
+                <label for="Morada">Morada </label><br> <!--Label-->
+                <input type="text" name="Morada" id="Morada" placeholder="Morada" maxlength="30" required> <!--input de texto para colocar uma Morada-->
+                <br>
+                <br>
+                <label for="codigo_postal">Codigo Postal </label> <!--Label-->
+                <br>
+                <input type="text" name="codigo postal" id="codigo_postal" placeholder="0000-000" maxlength="8" required pattern="^\d{4}(?:[-\s]\d{3})?$"> <!--input de texto para colocar um código postal-->
+                <br>
+                <br>
+                <label>NIF:</label> <!--Label-->
+                <br>
+                <input type="number" name="NIF" id="NIF" placeholder="NIF" maxlength="9"> <!--input de números para colocar um NIF com o máximo de 9 carateres-->
+                <br>
+                <br>
+                <label>Metodo de pagamento(disponíveis para compra Online):</label> <!--Label-->
+                <br>
+                <input type="radio" id="CC" name="Pagamento" value="CC"> <!--input de escolha -->
+                <label for="CC">Cartão de crédito: VISA, MasterCard, American Express</label> <!--Label-->
+                <br>
+                <input type="radio" id="CD" name="Pagamento" value="CD"> <!--input de escolha -->
+                <label for="CD">Cartão de débito: Visa Electron, VISA debit, Mastercard debit, Maestro</label> <!--Label-->
+                <br> 
+                <input type="radio" id="MB" name="Pagamento" value="MB"> <!--input de escolha -->
+                <label for="MB">Multibanco</label>  <!--Label-->
+                <br>
+                <input type="radio" id="Paypal" name="Pagamento" value="Paypal"> <!--input de escolha -->
+                <label for="Paypal">Paypal</label>    <!--Label-->
+                </fieldset>
+            <br>
+            <input type="reset" value="Limpar"> <!--Botão de limpar-->
+            <input type="submit" value="Confirmar"> <!--Botão de enviar conteúdo-->
+            </form>
+        <br>
+        <br>
+        </div>
+        <div class="Fcontainer"> <!--Divisão com classe "Fcontainer"-->
+            <div class="Tfooter"> <!--Divisão com classe "Tfooter"-->
+                <div class="listf"> <!--Divisão com classe "listf"-->
+                    <h6 class="h6">Ajuda:</h6> <!--Header 6 com classe "h6"-->
+                    <a href="FAQ.html">FAQ</a>  <!--ligação para "FAQ.html"-->
+                    <a href="TDD.html">Trocas e Devoluções</a> <!--ligação para "TDD.html"-->
+                    <a href="CAS.html">Condições Gerais das Ofertas</a> <!--ligação para "CAS.html"-->
+                </div>
+                <div class="listf">
+                    <h6 class="h6">Contactos:</h6> <!--Header 6 com classe "h6"-->
+                    <a href="AC.html">Atendimento ao cliente</a> <!--ligação para "AC.html"-->
+                    <a href="mailto:xxx@yyy.com">Email</a> <!--Abre o email automáticamente com o destinatário referido-->
+                    <a href="https://www.livroreclamacoes.pt/inicio">Livro de Reclamações</a> <!--Ligação para o site de reclamações-->
+                </div>
+                <div class="listf"> <!--Divisão com classe "listf"-->
+                    <h6 class="h6">Redes Sociais:</h6> <!--Header 6 com classe "h6"-->
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"> Facebook</a> <!--ligação para o facebook-->
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"> Instagram</a> <!--ligação para instagram-->
+                    <a href="https://twitter.com/" class="fa fa-twitter"> Twitter</a> <!--ligação para o twitter-->
+                    <a href="https://www.pinterest.pt/" class="fa fa-pinterest"> Pinterest</a> <!--ligação para o Pinterest-->
+                </div>
+            </div>
+            <div class="Bfooter"> <!--Divisão com classe "Bfooter"-->
+                <p style="padding-right: 10px;padding-left: 10px;padding-top: 5px;">Os direitos legais desta página pertencem a F&J,LDA tendo sido usada para um projeto escolar. Para mais informações contacte-nos via email.</p> <!--Adiciona espaço à direita e à esquerda das margens e no topo entre o conteúdo e o que estiver por cima-->
+            </div>
+        </div>
+         <!---Arrow go to top-->
+         <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+         <script type="text/javascript" src="jquery.js"></script>
+    </body>
+</html> 

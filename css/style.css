@@ -1,0 +1,543 @@
+*{                                                                                            /* Afteta toda a página*/
+    margin: 0;                                                                                /* Reduz a margem da página para 0 a menos que especificada*/
+    box-sizing: border-box;                                                                             
+}
+
+.img{                                                                                         /* Afteta a classe "img" em "TDD.html" */
+  max-width: 10%;                                                                             /* comprimento da imagem reduzido para 10% da original*/
+  height: auto;                                                                               /* Altura automática consoante o comprimento(para que a imagem tenha boas porpoções*/
+  display: block;                                                                             /* Método de mostragem da imagem em bloco,para que ocupe toda a linha*/
+  margin-left: auto;                                                                          /* distância à margem esquerda da página automático*/
+  margin-right: auto;                                                                         /* distância à margem direita da página automático*/
+}
+.Fcontainer{                                                                                  /* Afeta o Footer inteiro */
+  background-color: gray;                                                                   /* Cor do fundo do footer inteiro */
+  color: white;                                                                             /* cor do texto */
+  width: 100%;                                                                                /* Comprimento de linha que ocupa */
+  height: 155px;                                                                              /* Altura do footer */
+}
+.Fcontainer a:active, .Fcontainer a:link,.Fcontainer a:visited{                               /* Afeta os elementos do Fcontainer que sejam links(ativos,não visitados e vistados)*/
+  color: white;                                                                             /* cor do texto */
+  text-decoration: none;                                                                      /* sem decoraçôes de texto */
+}
+.Fcontainer a:hover{                                                                          /* Afeta os links do "Fcontainer" quando se passa o rato por cima */
+  color:black;                                                                              /* Cor do texto */
+  transition: .5s;                                                                            /* Transição para que os efeitos dentro desta classe aconteçam*/
+}
+.h6{                                                                                          /* Afeta a classe H6(utilizado no footer) */ 
+  font-size: 20px;                                                                            /* Tamanho do texto */
+  font-family: sans-serif;                                                                    /* Cor do texto */
+}
+.listf a{                                                                                     /* Afeta tudo o que esteja na classe "listf" e tenha o "a" como tag */
+  display:block;                                                                              /* dispor os elementos da classe em bloco para que ocupem toda a linha*/
+  font-size: 18px;                                                                            /* Tamanho do texto */
+}
+.Tfooter{                                                                                     /* Afeta o Footer superior */
+  display: flex;                                                                              /* Cria uma flexbox para os itens desta classe*/ 
+  flex-direction: row;                                                                        /* Coloca os itens da classe em linha*/
+  justify-content: space-between;                                                             /* Centra os itens da classe e dá espaço entre eles*/
+  padding-right: 30px;                                                                        /* Adiciona espaço entre o conteudo e o lado direito do que está na classe*/
+  padding-left: 30px;                                                                         /* Adiciona espaço entre o conteudo e o lado esquerdo do que está na classe*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;              /* O estilo de texto usado */
+  padding-bottom: 5px;                                                                        /* Adiciona espaço entre o que está por baixo e o conteudo da classe*/
+
+}
+.Bfooter{                                                                                     /* Afeta o footer inferior*/
+  background-color: rgb(86, 42, 112);                                                       /* Cor do fundo*/ 
+  height: 60px;                                                                               /* Altura da classe*/
+  font-size: 19px;                                                                            /* Tamanho do texto*/
+  margin: 0;                                                                                  /* Reduz a margem da classe para 0*/
+}
+.Body a:active,.Body a:link,.Body a:visited{                                                  /* Afeta os elementos da classe "Body" usado em "FAQ.html" que sejam links(ativos,não visitados e vistados)*/
+  color: rgb(255, 0, 0);                                                                    /* cor do texto*/
+  text-decoration: none;                                                                      /* decoraçôes do texto*/
+}
+.Body a:hover{                                                                                /* Afeta os links do "Body" quando se passa o rato por cima*/    
+  color:gray;                                                                               /* cor do texto*/
+  transition: .5s;                                                                            /* Transição para que os efeitos dentro desta classe aconteçam*/
+}
+.FAQT{                                                                                        /* Afeta a classe "FAQT" usada em "FAQ.html"*/
+  display: flex;                                                                              /* Cria uma flexbox para os itens desta classe*/  
+  justify-content: center;                                                                    /* Centra os itens da classe e dá espaço entre eles*/
+  font-size: 50px;                                                                            /* Tamanho do texto*/
+}
+.mail a:active,.mail a:link,.mail a:visited{                                                  /* Afeta os elementos da classe "mail" usada em "AC.html" que sejam links(ativos,não visitados e vistados)*/
+  text-decoration: underline;                                                                 /* Adiciona Sublinhado ao texto*/
+  color: rgb(255, 0, 0);                                                                    /* Cor do texto*/
+}
+.mail a:hover{                                                                                /* Afeta os links do "Body" quando se passa o rato por cima*/
+  color: gray;                                                                              /* Cor do texto*/
+  transition: .5s;                                                                            /* Transição para que os efeitos dentro desta classe aconteçam*/
+}
+@media only screen and (max-width: 357px){                                                    /* Apenas afeta dispositivos de ecrãs com comprimento máximo de 357px*/
+  .fix{                                                                                       /* Classe usada em "FAQ.html"*/
+    display: flex;                                                                            /* Cria uma flexbox para os itens desta classe*/ 
+    justify-content: center;                                                                  /* Centra os itens da classe e dá espaço entre eles*/
+  }
+}
+@media only screen and (max-width: 424px){                                                    /* Apenas afeta dispositivos de ecrãs com comprimento máximo de 424px*/
+  .Fcontainer{                                                                                /* Afeta o Footer inteiro */
+    height: 300px;                                                                            /* Altera a altura para 300px*/
+  }
+  .h6{                                                                                        /* Afeta a classe "h6"*/
+    font-size: 18px;                                                                          /* tamanho de texto*/
+    font-family: sans-serif;                                                                  /* Altera o tipo de letra*/
+    padding-top:6px;                                                                          /* Adiciona espaço entre o conteudo e o topo do que está na classe*/
+  }
+  .listf a{                                                                                   /* Afeta tudo o que esteja na classe "listf" e tenha o "a" como tag */
+    display:flex;                                                                             /* Cria uma flexbox para os itens desta classe*/ 
+    font-size: 16px;                                                                          /* tamanho de texto*/
+  }
+  .Tfooter{                                                                                   /* Afeta o Footer superior */
+    display: flex;                                                                            /* Cria uma flexbox para os itens desta classe*/
+    flex-direction: column;                                                                   /* Coloca os itens da classe em coluna*/
+    justify-content: space-between;                                                           /* Centra os itens da classe e dá espaço entre eles*/
+    padding-bottom: 7px;                                                                      /* Adiciona espaço entre o conteudo e por baixo do que está na classe*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            /* Tipo de letra*/
+  }
+  .Bfooter{                                                                                   /* Afeta o footer inferior*/
+    background-color: rgb(86, 42, 112);                                                     /* Cor do fundo*/
+    height: 90px;                                                                             /* Altura da classe*/
+    font-size: 16px;                                                                          /* Tamanho do texto*/
+  }
+}
+@media screen and (min-device-width: 425px) and (max-device-width: 767px) {                   /* Apenas afeta dispositivos de ecrãs entre os comprimentos de 425px e 767px*/
+  .Fcontainer{                                                                                /* Afeta o Footer inteiro */
+    height: 340px;                                                                            /* Altera a altura para 340px*/
+
+  }
+  .h6{                                                                                        /* Afeta a classe "h6"*/
+    font-size: 20px;                                                                          /* Tamanho do texto*/
+    font-family: sans-serif;                                                                  /* Tipo de letra*/
+    padding-top:10px;                                                                         /* Adiciona espaço entre o conteudo e o que está no topo do que está na classe*/
+  }
+  .listf a{                                                                                   /* Afeta tudo o que esteja na classe "listf" e tenha o "a" como tag */
+    display:flex;                                                                             /* Cria uma flexbox para os itens desta classe*/
+    font-size: 18px;                                                                          /* Tamanho do texto*/
+  }
+ .Tfooter{                                                                                    /* Afeta o Footer superior */
+    display: flex;                                                                            /* Cria uma flexbox para os itens desta classe*/
+    flex-direction: column;                                                                   /* Coloca os itens da classe em coluna*/
+    justify-content: space-between;                                                           /* Centra os itens da classe e dá espaço entre eles*/
+    padding-bottom: 15px;                                                                     /* Adiciona espaço entre o conteudo e por baixo do que está na classe*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            /* Tipo de letra*/
+  }
+  .Bfooter{                                                                                   /* Afeta o footer inferior*/
+    background-color: rgb(86, 42, 112);                                                     /* Cor do fundo*/
+    height: 100px;                                                                            /* Altera a altura para 60px*/
+    font-size: 20px;                                                                          /* Tamanho do texto*/
+  }   
+}
+@media screen and (min-device-width: 768px){                                                  /* Apenas afeta dispositivos de ecrãs com comprimento minimo de 728px*/
+  .fixated{                                                                                   /* Afeta a classe "fixated" em "CAS.html"*/
+    position: absolute;                                                                          /* fixa a posição da classe*/
+    bottom: 0px;                                                                              /* espaço entre o fundo do ecrã e a classe*/
+    width: 100%;                                                                              /* Comprimento que a classe ocupa da página*/
+  }
+  .fixated2{                                                                                  /* Afeta a classe "fixated2" em "AC.html"*/
+    position: absolute;                                                                          /* fixa a posição da classe*/
+    bottom: 0px;                                                                              /* espaço entre o fundo do ecrã e a classe*/
+    width: 100%;                                                                              /* Comprimento que a classe ocupa da página*/
+  }
+}
+@media screen and (min-device-width: 767px){                                                  /* Apenas afeta dispositivos de ecrãs com comprimento minimo de 491px*/
+ .fixx{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  .fix a:active, .fix a:link,.fix a:visited{                               /* Afeta os elementos do Fcontainer que sejam links(ativos,não visitados e vistados)*/
+    color: white;                                                                             /* cor do texto */
+    text-decoration: none;                                                                      /* sem decoraçôes de texto */
+  }
+}
+@media screen and (min-device-width: 491px) and (max-device-width: 767px) {                   /* Apenas afeta dispositivos de ecrãs entre os comprimentos de 425px e 767px*/
+  .Fcontainer{                                                                                /* Afeta o Footer inteiro */
+    height: 400px;                                                                            /* Altera a altura para 400px*/
+  }  
+}
+body{
+  margin:0;
+  padding: 0;
+  font-family: poppins;
+  background-color: #ffffff;
+  justify-content: center;    
+}
+.lg{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+.topnav{
+  background-color: grey;
+  color: white;
+  height: 110px;
+}
+.topnav a{
+  padding: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+.logo img{
+  height: 90px;
+}
+
+#topBtn{
+  position: fixed;
+  bottom: 170px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  background: rgb(86, 42, 112);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.full-slider-box{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f-slide-1{
+  background-image: url(images/Slider_01.jpg);
+}
+
+.slider-text-container{
+  width:80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.f-slider-text{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.f-slider-text strong{
+  color: #333333;
+  font-size: 3rem;
+  line-height: 55px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.f-slider-text span{
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 500;
+  color: #666666;
+  font-size: 1.2rem;
+}
+.f-slider-btn{
+  width:170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #0b9d8a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 14px;
+}
+.f-slider-text strong font{
+  color: #0b9d8a;
+}
+
+.feature-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-heading h2{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1b1919;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+  border: 1px solid #e0e0e0;
+}
+.feature-box{
+  width:155px;
+  height: 160px;
+  margin: 0px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.feature-box a img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.item span{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px;
+  color: #444444;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#autoWidth{
+  display: flex;
+  justify-content: center !important;
+  margin: 10px auto 40px auto;
+}
+
+/* Produtos */
+
+.section{
+  margin: 0;
+}
+
+.arrival-heading strong{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1b1919;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+  border: 1px solid #e0e0e0;
+}
+.arrival-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.arrival-heading strong{
+  color: #ffffff;
+  background-color: #202020;
+  font-weight: 500;
+}
+.arrival-heading p{
+  color: #808080;
+  margin: 10px;
+  font-size: 0.9rem;
+}
+.product-container{
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.product-box{
+  display: flex;
+  flex-grow: 0.5;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  margin: 20px;
+}
+.product-img{
+  width:200px;
+  height: 210px;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.product-img img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid #f3f3f3;
+}
+.p-name{
+  color: #727272;
+}
+.p-price{
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.product-box:hover{
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.new-arrival{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  /*CSS Pagina Produtos Individual*/
+.container-p{
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-p .img-box{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;    
+}
+.container-p .img-box img{
+  width: 400px;
+  
+}
+.container-p .text-box{
+  width: 50%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.container-p .text-box h1{
+  font-size: 3em;
+  color: #444;
+}
+.container-p .text-box h2{
+  font-size: 3em;
+  font-weight: 600;
+}
+.container-p .text-box button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+  border-radius: 20px;
+  background-color: grey;
+}
+.container-p button a{
+  color: white;
+}
+.icon{
+      display: none;
+  }
+  
+@media only screen and (max-width: 699px){
+  .icon{
+      font-size: 42px;
+      position:absolute;
+      right: 17px;
+      top: 20px;
+  }
+  .icon::before{
+      color: white;
+  }
+  .icon::after{
+      color: grey;
+  }
+  .hr{
+      background-color: rgb(53, 52, 52,0.8);
+      color: white;
+      display: none;
+  }
+  .hr a{
+      padding: 5px;
+      display: block;
+      justify-content: flex;
+      text-decoration: none;
+  }
+}
+@media screen and (min-device-width: 500px) and (max-device-width: 797px){
+  .container-p{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+  }
+  .img-box{
+      padding-top: 120px;
+      padding-left: 70px;
+  }
+  .text-box{
+      padding-top: 90px;
+      font-size: 13px;
+  }
+  .im{
+      width: 300px !important;
+      height: 400px;
+  }
+}
+
+
+@media only screen and (max-width: 499px){
+  .container-p{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+  }
+  .img-box{
+      padding-top: 120px;
+      padding-left: 70px;
+  }
+  .text-box{
+      padding-top: 90px;
+      font-size: 10px;
+  }
+  .im{
+      width: 268px !important;
+      height: 380px;
+  }
+}
+@media only screen and (max-width: 622px){
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+}
+@media only screen and (min-width: 700px){
+  .topnav{
+      color: white;
+      height: 100px;
+  }
+  .topnav a{
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      color: white;
+  }
+  .topnav a:hover{
+      color: black;
+      transition: .5s;
+  }
+.hr{
+      white-space:pre-line;
+      display: flex;
+      justify-content:space-between;
+      position: absolute;
+      right: 5px;
+      padding-top: 30px;
+  }
+.hr a{
+      padding-right: 50px;
+      padding-left: 50px;
+      font-size: 22px;
+  }
+.icon{
+      font-size: 0;
+  }
+}
